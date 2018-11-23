@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!-- introduccion a los componente -->
+    <!--
+      es separar el sitio web en diferente seccion para que la logica quede toda seprarada, para no estra duplicando el codigo
+    -->
+    <div id="app" class="container">
+      <h1>{{ saludos }}</h1>
+      <saludo></saludo> <segundocomponente></segundocomponente>
+      <componentexterno></componentexterno>
+      <!--
+        cada componente duplicado es una instancia nueva uno no afecta al otro
+      -->
+      <contador></contador> <contador></contador>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="componente-externo.js"></script>
+    <script src="contador.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
